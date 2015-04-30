@@ -1,3 +1,32 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack: Helvetica, sans-serif;
+$primary-color: white;
+$font-color:black;
+$title-size : 40px;
+
+body {
+	font:100% $font-stack;
+	background-color: $primary-color;
+	color:$font-color;
+	
+	#title {
+		font-size: $title-size;
+	}
+
+	div {
+		background-color:white;
+	}
+	#id1 {
+		font-style:italic;
+
+		#id2 {
+			text-decoration: underline;
+		}
+	}
+
+	.divClass {
+		font-family: "Times New Roman", Georgia, Serif;
+	}
+}
