@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+scope(:path => '/api/v1/') do
+  resources :articles, :controller => "api/articles"
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
